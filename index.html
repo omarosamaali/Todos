@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <div class="crud">
+      <div class="lang-buttons">
+        <button id="english-btn" class="lang-button" data-lang="en">
+          English
+        </button>
+        |
+        <button id="arabic-btn" class="lang-button" data-lang="ar">
+          العربية
+        </button>
+      </div>
+      <div class="head">
+        <h1 data-i18n="hello">Hello</h1>
+        <h2 data-i18n="note">Notes By Omar Osama</h2>
+      </div>
+      <div class="inputs">
+        
+        <select class="chose-select" id="priority-select">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+
+        <input class="input-name" placeholder="Name" type="text" id="title" />
+        <i class="fa-solid fa-arrow-down-wide-short"></i>        <button class="create-buton" id="submit" data-i18n="create">
+          Create
+        </button>
+      </div>
+      <div class="search">
+        <input placeholder="Search title" type="text" id="search-input" />
+        <button class="create-buton" id="search-button" data-i18n="search">
+          Search
+        </button>
+      </div>
+      <div class="outputs">
+        <table>
+          <tr>
+            <th data-i18n="id">id</th>
+            <th data-i18n="name">Name</th>
+            <th data-i18n="priority">priority</th>
+            <th data-i18n="update">Edit</th>
+            <th data-i18n="delete">Delete</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="error-message" >
+    </div>
+    <script src="master.js"></script>
+  </body>
+</html>

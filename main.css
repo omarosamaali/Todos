@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+    font-family: system-ui;
+    margin-top: 60px;
+}
+
+.chose-select {
+    border-radius: 12px;
+    border: 2px solid black;
+    height: 30px;
+}
+
+select {
+    height: 30px;
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.input-name {
+    width: 94%;
+    height: 30px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    border-radius: 20px;
+    padding: 7px;
+    color: #222;
+}
+
+.fa-solid {
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+input {
+    width: 98%;
+    height: 30px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    border-radius: 20px;
+    padding: 7px;
+    color: #222;
+}
+
+.fa-solid:hover {
+    transform: scale(1.2);
+    color: #0d6efd;
+}
+
+.edit-button {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+}
+
+.lang-button {
+    width: 60px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.create-buton {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 20px;
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #9f0500;
+    color: #fff;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #bcb8b8;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    color: black;
+    border: 1px solid black;
+}
+
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnSearch button {
+    width: 45%;
+}
+
+#deleteAll {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 5px;
+    border: 2px solid black;
+}
+#error-message {
+    color: #93262f;
+    background-color: #f8d7da;
+    width: 440px;
+    text-align: center;
+    height: 30px;
+    position: fixed;
+    top: calc(75% - 25px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    border: 1px solid black;
+}
